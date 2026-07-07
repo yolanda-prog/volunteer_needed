@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #2f6f5e;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: #2f6f5e;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .image-placeholder {
+      height: 150px;
+      background: #d8e6df;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 18px;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2f6f5e;
+      font-size: 22px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .time {
+      background: #eef6f2;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .email-box {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .email-box h2 {
+      margin-top: 0;
+      color: #2f6f5e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #2f6f5e;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Volunteer Hub</h1>
+    <p>Help in your community</p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Volunteers Needed</h2>
+      <p>Choose one volunteer job. Then write an email to the organiser.</p>
+    </section>
+
+    <section class="cards">
+
+      <div class="card">
+        <div class="volunteer reading">volunteer reading</div>
+        <div class="card-content">
+          <h3>Library Helper</h3>
+          <p><strong>What you do:</strong></p>
+          <ul>
+            <li>Read books with children.</li>
+            <li>Put books on the shelves.</li>
+          </ul>
+          <div class="time">
+            <strong>Times:</strong><br>
+            Saturday 10:00 am – 12:00 pm<br>
+            Wednesday 3:00 pm – 5:00 pm
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="volunteer garden">volunteer garden</div>
+        <div class="card-content">
+          <h3>Community Garden Helper</h3>
+          <p><strong>What you do:</strong></p>
+          <ul>
+            <li>Water plants.</li>
+            <li>Pull out weeds.</li>
+          </ul>
+          <div class="time">
+            <strong>Times:</strong><br>
+            Tuesday 9:00 am – 11:00 am<br>
+            Saturday 8:00 am – 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="volunteer op shop">volunteer op shop</div>
+        <div class="card-content">
+          <h3>Op Shop Helper</h3>
+          <p><strong>What you do:</strong></p>
+          <ul>
+            <li>Sort clothes and books.</li>
+            <li>Help customers.</li>
+          </ul>
+          <div class="time">
+            <strong>Times:</strong><br>
+            Monday 10:00 am – 12:00 pm<br>
+            Thursday 1:00 pm – 3:00 pm
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="volunteer clean up">volunteer clean up</div>
+        <div class="card-content">
+          <h3>Park Clean-up Helper</h3>
+          <p><strong>What you do:</strong></p>
+          <ul>
+            <li>Pick up rubbish.</li>
+            <li>Sweep paths.</li>
+          </ul>
+          <div class="time">
+            <strong>Times:</strong><br>
+            Friday 9:00 am – 11:00 am<br>
+            Sunday 8:00 am – 10:00 am
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="email-box">
+      <h2>How to apply</h2>
+      <p>Email the organiser.</p>
+      <p>Tell us:</p>
+      <ul>
+        <li>your name</li>
+        <li>the volunteer job you want</li>
+        <li>the time you can help</li>
+        <li>why you want to help</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Volunteer Hub
+  </footer>
+
+</body>
+</html>
