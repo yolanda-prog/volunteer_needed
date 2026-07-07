@@ -4,116 +4,149 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volunteer Hub</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Century Gothic", Arial, sans-serif;
       margin: 0;
       background: #f5f7fb;
       color: #222;
+      font-size: 22px;
     }
 
     header {
       background: #2f6f5e;
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 48px;
     }
 
     header p {
-      font-size: 20px;
-      margin-top: 10px;
+      font-size: 28px;
+      margin-top: 12px;
     }
 
     main {
-      max-width: 1000px;
-      margin: 30px auto;
+      max-width: 1100px;
+      margin: 35px auto;
       padding: 0 20px;
     }
 
     .intro {
       background: white;
-      padding: 25px;
-      border-radius: 16px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 30px;
+      border-radius: 18px;
+      margin-bottom: 35px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
       text-align: center;
     }
 
-    .intro h2 {
+    .intro h2,
+    .email-box h2 {
       margin-top: 0;
       color: #2f6f5e;
+      font-size: 34px;
+    }
+
+    .intro p {
+      font-size: 24px;
+      line-height: 1.6;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
     }
 
     .card {
       background: white;
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
-    .image-placeholder {
-      height: 150px;
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
       background: #d8e6df;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #555;
-      font-size: 18px;
     }
 
     .card-content {
-      padding: 20px;
+      padding: 25px;
     }
 
     .card h3 {
       margin-top: 0;
       color: #2f6f5e;
-      font-size: 22px;
+      font-size: 30px;
     }
 
     .card ul {
-      padding-left: 20px;
-      line-height: 1.7;
+      padding-left: 25px;
+      line-height: 1.8;
     }
 
     .time {
       background: #eef6f2;
-      padding: 12px;
-      border-radius: 10px;
-      margin-top: 15px;
-      line-height: 1.6;
+      padding: 16px;
+      border-radius: 12px;
+      margin-top: 18px;
+      line-height: 1.7;
+      font-size: 21px;
     }
 
     .email-box {
       background: white;
-      padding: 25px;
-      border-radius: 16px;
-      margin-top: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-
-    .email-box h2 {
-      margin-top: 0;
-      color: #2f6f5e;
+      padding: 30px;
+      border-radius: 18px;
+      margin-top: 35px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      line-height: 1.7;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 25px;
+      margin-top: 45px;
       background: #2f6f5e;
       color: white;
+      font-size: 22px;
+    }
+
+    /* For phones and small screens */
+    @media (max-width: 700px) {
+      body {
+        font-size: 20px;
+      }
+
+      header h1 {
+        font-size: 40px;
+      }
+
+      header p {
+        font-size: 24px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card h3 {
+        font-size: 28px;
+      }
+
+      .intro h2,
+      .email-box h2 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
@@ -129,13 +162,15 @@
 
     <section class="intro">
       <h2>Volunteers Needed</h2>
-      <p>Choose one volunteer job. Then write an email to the organiser.</p>
+      <p>We are looking for friendly volunteers to help with local community programs.</p>
     </section>
 
     <section class="cards">
 
       <div class="card">
-        <div class="volunteer reading.jpg">volunteer reading.jpg</div>
+        <volunteer-reading.jpg>
+        <img src="volunteer-reading.jpg" alt="Volunteer reading with children">
+
         <div class="card-content">
           <h3>Library Helper</h3>
           <p><strong>What you do:</strong></p>
@@ -152,7 +187,9 @@
       </div>
 
       <div class="card">
-        <div class="volunteer garden.jpg">volunteer garden.jpg</div>
+        <volunteer-garden.jpg>
+        <img src="volunteer-garden.jpg" alt="Volunteer working in a garden">
+
         <div class="card-content">
           <h3>Community Garden Helper</h3>
           <p><strong>What you do:</strong></p>
@@ -169,7 +206,9 @@
       </div>
 
       <div class="card">
-        <div class="volunteer op shop.jpg">volunteer op shop.jpg</div>
+        <volunteer-op-shop.jpg>
+        <img src="volunteer-op-shop.jpg" alt="Volunteer helping in an op shop">
+
         <div class="card-content">
           <h3>Op Shop Helper</h3>
           <p><strong>What you do:</strong></p>
@@ -186,7 +225,9 @@
       </div>
 
       <div class="card">
-        <div class="volunteer clean up.jpg">volunteer clean up.jpg</div>
+        <volunteer-clean-up.jpg>
+        <img src="volunteer-clean-up.jpg" alt="Volunteer cleaning up a park">
+
         <div class="card-content">
           <h3>Park Clean-up Helper</h3>
           <p><strong>What you do:</strong></p>
